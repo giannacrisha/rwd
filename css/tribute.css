@@ -99,10 +99,10 @@ body {
 /* BACK DIVS */
 
 .back {
-	width: 100%
-	margin-top: -15px;
-	height: 25%;
+	width: 100%;
+	height: auto;
 	padding: 20px;
+	background-color: white;
 }
 
 .row {
@@ -119,9 +119,10 @@ body {
 
 .twocolumn {
 	float: left;
-	width: 46%;
+	width: 47%;
 	padding-left: 2em;
-	margin-top: -2rem;
+	margin: -2rem 0 -20px 0;
+	height: auto;
 }
 
 .twocolumn h1 {
@@ -184,6 +185,11 @@ body {
 	text-align: center;
 }
 
+#timeline {
+	background-color: white;
+	color: black;
+}
+
 #timeline ul {
 	list-style-type: none;
 	line-height: 2;
@@ -210,18 +216,15 @@ body {
 
 footer {
 	background-color: #AEAFB1;
+	text-align: center;
 	width: 100%;
-	position: absolute;
 	left: 0;
 	right: 0;
 	line-height: 40px;
 	font-size: 20px;
 	color: white;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	text-align: center;
-	margin-top: -1.5rem;
-	margin-right: -1.5rem;
+	padding: 3rem 0 3rem 0;
+	margin:0;
 }
 
 footer a {
