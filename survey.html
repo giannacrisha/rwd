@@ -3,9 +3,9 @@
 <head>
 	<title>RWD &middot; Survey Form</title>
 	<link rel="stylesheet" type="text/css" href="css/survey.css">
-	<script src="rwd.js"></script>
 </head>
-<body background="images/surveybg.jpg">
+<body background="images/surveybg.png">
+	<!-- NAVIGATION BAR -->
 	<div id="navCont">
 		<nav id="navbar">
 			<div id="logoDiv">
@@ -21,77 +21,84 @@
 			<a class="navTabs" href="portfolio.html">PORTFOLIO</a>
 		</nav>
 	</div>
+
 	<center>
 	<main>
-	<h1 id="title">Survey</h1>
-	<p id="description">This is a survey form project for the freeCodeCamp Responsive Web Design Certification.</p>
-	<form id="survey-form">
-		<!-- Name -->
-		<label id="name-label">What's your name?</label><br>
-		<input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
-		<!-- Email -->
-		<label id="email-label">What's your email?</label><br>
-		<input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
-		<!-- Number -->
-		<label id="number-label">How old are you?</label><br>
-		<input type="number" name="number" id="number" placeholder="Enter your age" min="1" max="100" required><br><br>
-		<!-- Gender -->
-		<label for="standard-select">What is your assigned sex at birth?</label>
-<div class="select">
-  <select id="standard-select">
-  	<option value="" disabled selected>Select your option</option>
-    <option value="Option 1">&#9;Male</option>
-    <option value="Option 2">&#9;Female</option>
-  </select>
-</div><br>
-		<!-- Political Alignment -->
-		What is your political alignment?<br>
-		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Libertarian Left
-		</label><br>
-		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Libertarian Right
-		</label><br>
-		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Authoritarian Left
-		</label><br>
-		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Authoritarian Right
-		</label><br><br>
-		<!-- Interests -->
-		What are you interested in?<br>
-		<label class="container">One
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
+	<!-- FORM HEADER -->
+		<h1 id="title">Survey</h1>
+		<p id="description">This is a survey form project created by Gianna Crisha Saludo<br> for the freeCodeCamp.com Responsive Web Design Certification.</p>
+		<!-- FORM -->
+		<form id="survey-form">
+			<!-- NAME -->
+			<label id="name-label">What's your name?</label><br>
+			<input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
 
-<label class="container">Two
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
+			<!-- EMAIL -->
+			<label id="email-label">What's your email?</label><br>
+			<input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
 
-<label class="container">Three
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
+			<!-- AGE -->
+			<label id="number-label">How old are you?</label><br>
+			<input type="number" name="age" id="number" placeholder="Enter your age" min="1" max="100" required><br><br>
 
-<label class="container">Four
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-		<!-- Comments -->
-		Do you have additional comments?<br>
-		<textarea></textarea><br>
-		<!-- Submit -->
-		<button id="submit" type="submit">Submit</button>
-	</form>
+			<!-- GENDER -->
+			<label for="sex">What is your assigned sex at birth?</label>
+			<div class="select">
+				<select id="dropdown">
+					<option value="" disabled selected>Select your option</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</div><br>
+
+			<!-- POLITICAL ALIGNMENT -->
+			<label>What is your political alignment?</label><br>
+			<label for="libleft">
+				<input id="libleft" type="radio" name="politics" value="libleft">Libertarian Left
+			</label><br>
+			<label for="libright">
+				<input id="libright" type="radio" name="politics" value="libright">Libertarian Right
+			</label><br>
+			<label for="autleft">
+				<input id="autleft" type="radio" name="politics" value="autleft">Authoritarian Left
+			</label><br>
+			<label for="autright">
+				<input id="autright" type="radio" name="politics" value="autright">Authoritarian Right
+			</label><br><br>
+
+			<!-- INTERESTS -->
+			<label>What are you interested in?</label><br>
+			<label class="checkbox-container">Philosophy
+				<input type="checkbox" value="Philosophy">
+				<span class="checkmark"></span>
+			</label>
+
+			<label class="checkbox-container">Literature
+				<input type="checkbox" value="Literature">
+				<span class="checkmark"></span>
+			</label>
+
+			<label class="checkbox-container">Programming
+				<input type="checkbox" value="Programming">
+				<span class="checkmark"></span>
+			</label>
+
+			<label class="checkbox-container">Mathematics
+				<input type="checkbox" value="Mathematics">
+				<span class="checkmark"></span>
+			</label><br>
+
+			<!-- Comments -->
+			<label>Do you have additional comments?<br></label>
+			<textarea></textarea><br><br>
+			<!-- Submit -->
+			<button id="submit" type="submit">Submit</button>
+		</form>
 	</main>
 	</center>
 </body>
 </html>
 
-<!--
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
 
 
 
