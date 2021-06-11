@@ -98,30 +98,33 @@ body {
 }
 
 /* TRIBUTE PAGE */
+#title {
+	margin: 2rem;
+}
 
 #title a {
 	font-family: montserratBlack;
 	font-size: 5rem;
 	color: #625750;
-	text-shadow:2px 2px #000;
 	letter-spacing: 5px;
+	background-color: rgb(255, 255, 255, 0.8);
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 60px;
 }
 
 #image {
 	border-radius: 20px;
 	width: 20rem;
-}
-
-#img-caption {
+	margin-top: 1rem;
 }
 
 #tribute-info {
 	text-align: justify;
 	width: 40rem;
-	background-color: rgb(255, 255, 255, 0.7);
+	background-color: rgb(255, 255, 255, 0.8);
 	padding: 3rem;
 	line-height: 2;
-	border-radius: 20px;
+	border-radius: 40px;
 	text-indent: 1in;
 }
 
