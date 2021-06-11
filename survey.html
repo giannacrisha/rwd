@@ -1,21 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Survey Form</title>
+	<title>RWD &middot; Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="css/survey.css">
+	<script src="rwd.js"></script>
 </head>
-<body>
-	<h1 id="title"></h1>
-	<p id="description"></p>
+<body background="bg.jpg">
+	<div id="navCont">
+		<nav id="navbar">
+			<div id="logoDiv">
+				<a href="index.html">
+					<img id="logo" src="logo.png">
+				</a>
+			</div>
+			<a class="navTabs" href="index.html">HOME</a>
+			<a class="navTabs" href="tribute.html">TRIBUTE</a>
+			<a class="navTabs" href="survey.html">SURVEY</a>
+			<a class="navTabs" href="product.html">PRODUCT</a>
+			<a class="navTabs" href="docs.html">DOCUMENT</a>
+			<a class="navTabs" href="portfolio.html">PORTFOLIO</a>
+		</nav>
+	</div>
+
+	<h1 id="title">Survey Title</h1>
+	<p id="description">Description of Survey</p>
 	<form id="survey-form">
+		<!-- Name -->
 		<label id="name-label">Name:</label><input type="text" name="name" id="name" placeholder="Enter your name"><br>
+		<!-- Email -->
 		<label id="email-label">Email:</label><input type="email" name="email" id="email" placeholder="Enter your email"><br>
-		<label id="number-label">Favorite Number:</label><input type="number" name="number" id="number" placeholder="Enter a number"><br>
-		<label id="gender-label">Gender:</label><select>
+		<!-- Number -->
+		<label id="number-label">Number:</label><input type="number" name="number" id="number" placeholder="Enter your favorite number" min="0" max="1000"><br>
+		<label id="gender-label">Gender:</label>
+		<select id="dropdown">
 			<option>Male</option>
 			<option>Female</option>
 			<option>Others</option>
-		</select>
-		
+		</select><br>
+		<label for="indoor">
+			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+		</label>
+		<label for="indoor">
+			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+		</label>
+		<label for="indoor">
+			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+		</label>
+		<label for="indoor">
+			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+		</label><br>
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+		<textarea>Additional Comments</textarea><br>
+
+		<button id="submit" type="submit">Submit</button>
 	</form>
 </body>
 </html>
+
+<!--
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

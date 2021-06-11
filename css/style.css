@@ -37,7 +37,9 @@ a {
 }
 
 body {
-	background-image: opacity(0.1);
+	font-family: montserratReg;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 /* NAVIGATION BAR */
 #logoDiv {
