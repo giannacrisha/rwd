@@ -180,6 +180,7 @@ select {
   appearance: none;
   background-color: white;
   border: none;
+  padding: 10em;
   margin: 0;
   width: 70%;
   font-family: inherit;
