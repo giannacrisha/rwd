@@ -42,6 +42,7 @@ body {
 }
 
 /* NAVIGATION BAR */
+
 #logoDiv {
 	float: right;
 	border-radius: 12px;
@@ -97,27 +98,45 @@ body {
 	padding-left: 3rem;
 }
 
-/* TRIBUTE PAGE */
+/* BACK DIVS */
 
-#namepic-div {
+.back {
+	width: 100%
+	margin-top: -15px;
+	height: 25%;
+	padding: 20px;
+}
+
+.row {
+	align-items: center;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.twocolumn {
+	float: left;
+	width: 46%;
+	padding-left: 2em;
+	margin-top: -2rem;
+}
+
+.twocolumn h1 {
+	font-family: montserratBold;
+}
+
+/* TRIBUTE PAGE (1ST SECTION) */
+
+#maindiv {
 	background-color: #AEAFB1;
 	height: 25rem;
 	margin-top: -15px;
 	margin-right: -15px;
-}
-
-#image {
-	border-radius: 20px;
-	width: auto;
-	height: 25rem;
-	float: right;
-	position: absolute;
-	
-}
-
-#img-caption {
-	color: white;
-	text-align: right;
 }
 
 #title {
@@ -131,6 +150,22 @@ body {
 	font-size: 5rem;
 	color: #625750;
 	letter-spacing: 5px;
+	transition: 0.5s;
+}
+
+#title a:hover {
+	color: black;
+}
+
+#image {
+	border-radius: 20px;
+	width: auto;
+	height: 25rem;
+	float: right;
+	position: absolute;
+}
+
+#img-caption {
 }
 
 #subtitle {
@@ -138,61 +173,27 @@ body {
 	font-size: 2rem;
 }
 
-#info-container {
-	padding-left: 1rem;
-	margin: 0;
-	background-color: black;
-}
-
-#data {
-	background-color: #96897f;
-	float: left;
-	width: 45%;
-	margin-top: -30px;
-	text-align: justify;
-	line-height: 2;
-	padding: 1rem;
-}
-
-#data table {
-	text-align: center;
-	border-radius: 30px;
-	background-color: #c6bcb6 ;
-	padding: 0.2rem;
-	float: right;
-	margin-top: 1.5rem;
-}
-
-#data td {
-	padding: 0 3rem 0 3rem;
-}
-
-#data th {
-	padding: 0 1rem 0 1rem;
-}
-
-#data tr {
-	background-color: rgb(255, 255, 255, 0.8);
-}
-
+/* TRIBUTE PAGE (2ND SECTION) */
 
 #biography {
-	background-color: rgb(255, 255, 255, 0.8);
-	float: right;
-	width: 50%;
-	margin-top: -32px;
-	margin-right: -15px;
+	background-color: #96897f;
+	color: white;
 }
 
 #biography h1 {
-	font-size:3rem;
-	font-family: montserratBold;
-	text-indent: 1in;
+	text-align: right;
+	padding-right: 0.5in;
 }
 
 #biography p {
 	text-align: center;
 }
+
+#timeline ul {
+	list-style-type: none;
+	line-height: 2;
+}
+
 #tribute-info {
 	text-align: justify;
 	line-height: 2;
@@ -201,9 +202,42 @@ body {
 }
 
 #tribute-link {
-	color: #625750;
+	color: white;
+	font-family: montserratBold;
+	transition: 0.5s;
 }
 
+#tribute-link:hover {
+	color: #c6bcb6;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #AEAFB1;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	line-height: 40px;
+	font-size: 20px;
+	color: white;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	margin-top: -1.5rem;
+}
+
+#gitlink {
+	color: #e0e2e4;
+	font-weight: bold;
+	font-family: montserratSemiBold;
+	transition: 0.5s;
+}
+
+#gitlink:hover {
+	color: #625750;
+}
 
 
 

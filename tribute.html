@@ -3,9 +3,8 @@
 <head>
 	<title>RWD &middot; Tribute Page</title>
 	<link rel="stylesheet" type="text/css" href="css/tribute.css">
-	<script src="rwd.js"></script>
 </head>
-<body bgcolor="#96897f">
+<body>
 	<div id="navCont">
 		<nav id="navbar">
 			<div id="logoDiv">
@@ -23,9 +22,9 @@
 	</div>
 
 	<main id="main">
-		<div id="namepic-div">
+		<div id="maindiv">
 			<h1 id="title">
-				<a id="tribute-link" href="https://en.wikipedia.org/wiki/Joan_Clarke" target="_blank"> Joan Clarke</a>
+				<a id="joanclarke" href="https://en.wikipedia.org/wiki/Joan_Clarke" target="_blank"> Joan Clarke</a>
 				<br><font id="subtitle">the woman who broke the Enigma</font></h1>
 			<div id="img-div">
 				<img id="image" src="images/clarke.png" alt="An image of Joan Clarke."><br>
@@ -33,51 +32,33 @@
 			</div><br>
 		</div>
 
-		<div id="info-container">
-			<div id="data">
-				<table cellspacing="5rem">
-					<tr>
-						<th style="border-top-left-radius: 30px;">Born</th>
-						<td style="border-top-right-radius: 30px;">Joan Elisabeth Lowther Clarke<br>
-							24 June 1917<br>
-							West Norwood, London, England, UK</td>
-					</tr>
-					<tr>
-						<th>Died</th>
-						<td>4 September 1996 (aged 79)<br>
-						Headington, Oxfordshire, England, UK</td>
-					</tr>
-					<tr>
-						<th>Nationality</th>
-						<td>British</td>
-					</tr>
-					<tr>
-						<th>Other names</th>
-						<td>Joan Clarke Murray (1952&mdash;1996)</td>
-					</tr>
-					<tr>
-						<th>Occupation</th>
-						<td>Cryptanalyst</td>
-					</tr>
-					<tr>
-						<th>Partner(s)</th>
-						<td>Alan Turing</td>
-					</tr>
-					<tr>
-						<th style="border-bottom-left-radius: 30px;">Award(s)</th>
-						<td style="border-bottom-right-radius: 30px;">BNS Sanford Saltus Gold Medal (1986)</td>
-					</tr>
-				</table>
-			</div>
-			<div id="biography">
+		<div class="back row">
+			<div class="twocolumn" id="biography">
 				<h1>Biography</h1>
 				<article id="tribute-info">
 					Joan Elisabeth Lowther Murray was an English cryptanalyst and numismatist best known for her work as a code-breaker at Bletchley Park during the Second World War. Although she did not personally seek the spotlight, her role in the Enigma project that decrypted Nazi Germany's secret communications earned her awards and citations, such as appointment as a Member of the Order of the British Empire (MBE), in 1946.
 				</article>
-				<p>More information about <a id="tribute-link" href="https://en.wikipedia.org/wiki/Joan_Clarke" target="_blank">Joan Clarke</a>.</p>
+				<p>More information about <a id="tribute-link" href="https://en.wikipedia.org/wiki/Joan_Clarke" target="_blank">Joan Clarke</a>.</p><br>
+			</div>
+			<div class="twocolumn" id="timeline">
+				<h1>Timeline</h1><br>
+				<ul>
+					<li>1917 &mdash; Born in West Norwood</li>
+					<li>1939 &mdash; Double first degree in mathematics (Cambridge University)</li>
+					<li>1940 &mdash; Recruited at the Government Code and Cypher School (GCCS) at Bletchley Park and join the codebreakers.</li>
+					<li>1946 &mdash; Appointed as a Member of the Order of the British Empire (MBE).</li>
+					<li>1952 &mdash; Marries Lieutenant-Colonel John K.R. Murray.</li>
+					<li>1986 &mdash; Awarded the Sanford Saltus Gold Medal by the British Numismatic Society.</li>
+					<li>1996 &mdash; Dies at her home in Oxford</li>
+				</ul>
 			</div>
 		</div>
 	</main>
+
+	<footer>
+		Copyright &copy; 2021 by 
+		<a href="https://github.com/giannacrisha" id="gitlink">Gianna Saludo</a><br>
+	</footer>
 </body>
 </html>
 
