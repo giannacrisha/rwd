@@ -43,14 +43,13 @@ body {
 
 /* NAVIGATION BAR */
 
-#logoDiv {
+#logodiv {
 	float: right;
 	border-radius: 12px;
 	color: white;
 	text-align: center;
 	padding: 1rem 0rem 0rem 13rem;
 	transition: 0.5s;
-	z-index: 0;
 }
 
 #logo {
@@ -66,15 +65,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: #625750 ;
+	justify-content: flex-start;
+	position: fixed;
 	top: 0;
 	left: 0;
-	position: fixed;
 	width: 14.5rem;
 	height: 100%;
-	justify-content: flex-start;
 	transition: 0.5s;
 	text-align: left;
-	z-index: 9999999;
 	margin-left: -13rem;
 	line-height: 5;
 }
@@ -83,7 +81,7 @@ body {
 	margin-left: 0;
 }
 
-.navTabs {
+.navtabs {
 	letter-spacing: 3px;
 	font-size: 1.1rem;
 	font-family: montserratSemiBold;
@@ -92,7 +90,7 @@ body {
 	padding-left: 1rem;
 }
 
-.navTabs:hover {
+.navtabs:hover {
 	color: #c6bcb6;
 	font-family: montserratBold;
 	padding-left: 3rem;
@@ -165,9 +163,6 @@ body {
 	position: absolute;
 }
 
-#img-caption {
-}
-
 #subtitle {
 	color: white;
 	font-size: 2rem;
@@ -229,14 +224,14 @@ footer {
 	margin-right: -1.5rem;
 }
 
-#gitlink {
+footer a {
 	color: white;
 	font-weight: bold;
 	font-family: montserratSemiBold;
 	transition: 0.5s;
 }
 
-#gitlink:hover {
+ footer a:hover {
 	color: #625750;
 }
 
