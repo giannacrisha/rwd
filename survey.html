@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/survey.css">
 	<script src="rwd.js"></script>
 </head>
-<body background="bg.jpg">
+<body background="images/surveybg.jpg">
 	<div id="navCont">
 		<nav id="navbar">
 			<div id="logoDiv">
@@ -22,37 +22,47 @@
 		</nav>
 	</div>
 
-	<h1 id="title">Survey Title</h1>
-	<p id="description">Description of Survey</p>
+	<h1 id="title">Survey</h1>
+	<p id="description">This is a survey form project for the freeCodeCamp Responsive Web Design Certification.</p>
 	<form id="survey-form">
 		<!-- Name -->
-		<label id="name-label">Name:</label><input type="text" name="name" id="name" placeholder="Enter your name"><br>
+		<label id="name-label">What's your name?</label><br>
+		<input type="text" name="name" id="name" placeholder="Enter your name"><br>
 		<!-- Email -->
-		<label id="email-label">Email:</label><input type="email" name="email" id="email" placeholder="Enter your email"><br>
+		<label id="email-label">What's your email?</label><br>
+		<input type="email" name="email" id="email" placeholder="Enter your email"><br>
 		<!-- Number -->
-		<label id="number-label">Number:</label><input type="number" name="number" id="number" placeholder="Enter your favorite number" min="0" max="1000"><br>
-		<label id="gender-label">Gender:</label>
+		<label id="number-label">How old are you?</label><br>
+		<input type="number" name="number" id="number" placeholder="Enter your age" min="0" max="100"><br>
+		<!-- Gender -->
+		<label id="gender-label">What gender do you identify as?</label><br>
 		<select id="dropdown">
 			<option>Male</option>
 			<option>Female</option>
 			<option>Others</option>
 		</select><br>
-		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
-		</label>
-		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
-		</label>
-		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
-		</label>
+		<!-- Political Alignment -->
+		What is your political alignment?<br>
 		<label for="indoor">
 			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
 		</label><br>
+		<label for="indoor">
+			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+		</label><br>
+		<label for="indoor">
+			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+		</label><br>
+		<label for="indoor">
+			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+		</label><br>
+		<!-- Interests -->
+		What are you interested in?<br>
 		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<label for="vehicle1"> I have a bike</label><br>
+		<label for="vehicle1"> I have a bike</label><br>
+		<!-- Comments -->
+		Do you have additional comments?<br>
 		<textarea>Additional Comments</textarea><br>
-
+		<!-- Submit -->
 		<button id="submit" type="submit">Submit</button>
 	</form>
 </body>
