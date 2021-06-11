@@ -21,50 +21,72 @@
 			<a class="navTabs" href="portfolio.html">PORTFOLIO</a>
 		</nav>
 	</div>
-
+	<center>
+	<main>
 	<h1 id="title">Survey</h1>
 	<p id="description">This is a survey form project for the freeCodeCamp Responsive Web Design Certification.</p>
 	<form id="survey-form">
 		<!-- Name -->
 		<label id="name-label">What's your name?</label><br>
-		<input type="text" name="name" id="name" placeholder="Enter your name"><br>
+		<input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
 		<!-- Email -->
 		<label id="email-label">What's your email?</label><br>
-		<input type="email" name="email" id="email" placeholder="Enter your email"><br>
+		<input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
 		<!-- Number -->
 		<label id="number-label">How old are you?</label><br>
-		<input type="number" name="number" id="number" placeholder="Enter your age" min="0" max="100"><br>
+		<input type="number" name="number" id="number" placeholder="Enter your age" min="1" max="100" required><br><br>
 		<!-- Gender -->
-		<label id="gender-label">What gender do you identify as?</label><br>
-		<select id="dropdown">
-			<option>Male</option>
-			<option>Female</option>
-			<option>Others</option>
-		</select><br>
+		<label for="standard-select">What is your assigned sex at birth?</label>
+<div class="select">
+  <select id="standard-select">
+  	<option value="" disabled selected>Select your option</option>
+    <option value="Option 1">&#9;Male</option>
+    <option value="Option 2">&#9;Female</option>
+  </select>
+</div><br>
 		<!-- Political Alignment -->
 		What is your political alignment?<br>
 		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+			<input id="indoor" type="radio" name="indoor-outdoor">Libertarian Left
 		</label><br>
 		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+			<input id="indoor" type="radio" name="indoor-outdoor">Libertarian Right
 		</label><br>
 		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+			<input id="indoor" type="radio" name="indoor-outdoor">Authoritarian Left
 		</label><br>
 		<label for="indoor">
-			<input id="indoor" type="radio" name="indoor-outdoor">Indoor
-		</label><br>
+			<input id="indoor" type="radio" name="indoor-outdoor">Authoritarian Right
+		</label><br><br>
 		<!-- Interests -->
 		What are you interested in?<br>
-		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-		<label for="vehicle1"> I have a bike</label><br>
+		<label class="container">One
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Two
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Three
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Four
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
 		<!-- Comments -->
 		Do you have additional comments?<br>
-		<textarea>Additional Comments</textarea><br>
+		<textarea></textarea><br>
 		<!-- Submit -->
 		<button id="submit" type="submit">Submit</button>
 	</form>
+	</main>
+	</center>
 </body>
 </html>
 
