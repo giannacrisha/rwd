@@ -40,6 +40,7 @@ body {
 	font-family: montserratReg;
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
 }
 /* NAVIGATION BAR */
 #logoDiv {
@@ -97,97 +98,103 @@ body {
 	padding-left: 3rem;
 }
 
-/* SURVEY FORM */
+/* WEB NAVBAR */
 
-main {
-	background-color: rgb(98, 87, 80, 0.5);
-	width: 70%;
-	border-radius: 40px;
-	padding: 2rem;
-	margin:2rem;
+header {
+	margin: -15px -15px 0 0;
 }
 
-#title {
-	font-family: montserratBlack;
-	font-size: 5rem;
-	line-height: 0.5;
+#nav-bar {
+	background-color: black;
+	font-family: helvetica;
+	padding: 1rem;
+	position: fixed;
+	width: 100%;
 }
 
-#description {
-	font-weight: normal;
+#nav-bar a {
+	padding-left: 3rem;
+	vertical-align: bottom;
+	color: #AAA;
 }
 
-#description a {
-	color: white;
+#header-img {
+	width: 20px;
+	vertical-align: middle;
 }
+
+/**/
+ iframe {
+ 	margin-right: -15px;
+ }
+
+ /**/
 
 form {
-	font-size: 2rem;
+	padding: 15rem;
 	line-height: 2;
-
-}
-
-.boldlabel {
-	text-align: left;
-	font-family: montserratSemiBold;
-}
-
-input[type=text], input[type=email], input[type=number], select {
-	width: 70%;
-	font-family: inherit;
-	font-size: inherit;
-
-}
-
-input[type=radio] {
-	font-size: 1rem;
-	font-family: montserratReg;
 }
 
 input {
+	width: 70%;
+	font-family: helvetica;
+	font-size: 3rem;
+	border-radius: 50px;
 	padding: 1rem;
-	font-size: 1rem;
-	border-radius: 10px;
-	border: none;
+	background-color: black;
+	color: white;
 }
 
 #submit {
+	font-family: helvetica;
+	font-size: 3rem;
+	border-radius: 50px;
 	padding: 1rem;
-	font-size: inherit;
-	font-family: montserratBold;
-	border-radius: 40px;
 }
 
-textarea {
-  width: 70%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
-  font-size: inherit;
+ label {
+ 	font-size: 5rem;
+ 	font-family: helvetica;
+ }
+/**/
+
+footer {
+	background-color: black;
+	text-align: center;
+	width: 100%;
+	line-height: 40px;
+	font-size: 20px;
+	color: #aaa;
+	padding: 3rem 0 3rem 0;
+	margin:-15px;
+	float: right;
+	font-family: helvetica;
 }
 
-input[type=radio], input[type=checkbox] {
-	font-family: montserratReg;
+footer a {
+	color: white;
+	font-weight: bold;
+	transition: 0.5s;
 }
 
-/* SELECT */
-
-select {
-  appearance: none;
-  background-color: white;
-  border: none;
-  padding: 10em;
-  margin: 0;
-  width: 70%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
+ footer a:hover {
+	color: #625750;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
