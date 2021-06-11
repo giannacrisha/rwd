@@ -169,7 +169,7 @@ body {
 }
 
 #subtitle {
-	color: #e0e2e4;
+	color: white;
 	font-size: 2rem;
 }
 
@@ -230,7 +230,7 @@ footer {
 }
 
 #gitlink {
-	color: #e0e2e4;
+	color: white;
 	font-weight: bold;
 	font-family: montserratSemiBold;
 	transition: 0.5s;
