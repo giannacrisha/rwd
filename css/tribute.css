@@ -12,22 +12,22 @@ HEX: #625750 (DARK BROWN)
 /* FONTS */
 @font-face {
 	font-family: montserratBlack;
-	src: url(Montserrat/Montserrat-Black.ttf);
+	src: url(../Montserrat/Montserrat-Black.ttf);
 }
 
 @font-face {
 	font-family: montserratBold;
-	src: url(Montserrat/Montserrat-Bold.ttf);
+	src: url(../Montserrat/Montserrat-Bold.ttf);
 }
 
 @font-face {
 	font-family: montserratSemiBold;
-	src: url(Montserrat/Montserrat-SemiBold.ttf);
+	src: url(../Montserrat/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
 	font-family: montserratReg;
-	src: url(Montserrat/Montserrat-Regular.ttf);
+	src: url(../Montserrat/Montserrat-Regular.ttf);
 }
 
 /* TEXT ELEMENTS */
@@ -37,7 +37,9 @@ a {
 }
 
 body {
-	background-image: opacity(0.1);
+	font-family: montserratReg;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 /* NAVIGATION BAR */
 #logoDiv {
@@ -97,7 +99,7 @@ body {
 
 /* TRIBUTE PAGE */
 
-#tributetitle a {
+#title a {
 	font-family: montserratBlack;
 	font-size: 5rem;
 	color: #625750;
@@ -105,7 +107,27 @@ body {
 	letter-spacing: 5px;
 }
 
+#image {
+	border-radius: 20px;
+	width: 20rem;
+}
 
+#img-caption {
+}
+
+#tribute-info {
+	text-align: justify;
+	width: 40rem;
+	background-color: rgb(255, 255, 255, 0.7);
+	padding: 3rem;
+	line-height: 2;
+	border-radius: 20px;
+	text-indent: 1in;
+}
+
+#tribute-link {
+	color: #625750;
+}
 
 
 
