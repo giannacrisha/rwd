@@ -30,19 +30,19 @@
 		<!-- FORM -->
 		<form id="survey-form">
 			<!-- NAME -->
-			<label id="name-label">What's your name?</label><br>
+			<label id="name-label" class="boldlabel">What's your name?</label><br>
 			<input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
 
 			<!-- EMAIL -->
-			<label id="email-label">What's your email?</label><br>
+			<label id="email-label" class="boldlabel">What's your email?</label><br>
 			<input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
 
 			<!-- AGE -->
-			<label id="number-label">How old are you?</label><br>
+			<label id="number-label" class="boldlabel">How old are you?</label><br>
 			<input type="number" name="age" id="number" placeholder="Enter your age" min="1" max="100" required><br><br>
 
 			<!-- GENDER -->
-			<label for="sex">What is your assigned sex at birth?</label>
+			<label for="sex" class="boldlabel">What is your assigned sex at birth?</label>
 			<div class="select">
 				<select id="dropdown">
 					<option value="" disabled selected>Select your option</option>
@@ -52,7 +52,7 @@
 			</div><br>
 
 			<!-- POLITICAL ALIGNMENT -->
-			<label>What is your political alignment?</label><br>
+			<label class="boldlabel">What is your political alignment?</label><br>
 			<label for="libleft">
 				<input id="libleft" type="radio" name="politics" value="libleft">Libertarian Left
 			</label><br>
@@ -67,29 +67,25 @@
 			</label><br><br>
 
 			<!-- INTERESTS -->
-			<label>What are you interested in?</label><br>
-			<label class="checkbox-container">Philosophy
-				<input type="checkbox" value="Philosophy">
-				<span class="checkmark"></span>
-			</label>
-
-			<label class="checkbox-container">Literature
-				<input type="checkbox" value="Literature">
-				<span class="checkmark"></span>
-			</label>
-
-			<label class="checkbox-container">Programming
-				<input type="checkbox" value="Programming">
-				<span class="checkmark"></span>
-			</label>
-
-			<label class="checkbox-container">Mathematics
-				<input type="checkbox" value="Mathematics">
-				<span class="checkmark"></span>
+			<label class="boldlabel">What are you interested in?</label><br>
+			<label>
+				<input type="checkbox" value="Philosophy">Philosophy
 			</label><br>
 
+			<label>
+				<input type="checkbox" value="Literature">Literature
+			</label><br>
+
+			<label>
+				<input type="checkbox" value="Programming">Programming
+			</label><br>
+
+			<label>
+				<input type="checkbox" value="Mathematics">Mathematics
+			</label><br><br>
+
 			<!-- Comments -->
-			<label>Do you have additional comments?<br></label>
+			<label class="boldlabel">Do you have additional comments?<br></label>
 			<textarea></textarea><br><br>
 			<!-- Submit -->
 			<button id="submit" type="submit">Submit</button>
