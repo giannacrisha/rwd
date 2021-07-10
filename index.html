@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Responsive Web Design</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="rwd.js"></script>
+	<title>RWD &middot; Tribute Page</title>
+	<link rel="stylesheet" type="text/css" href="css/tribute.css">
 </head>
-<body background="bg.jpg">
-	<div id="navCont">
+<body bgcolor="#AEAFB1">
+	<div id="navcont">
 		<nav id="navbar">
-			<div id="logoDiv">
+			<div id="logodiv">
 				<a href="index.html">
 					<img id="logo" src="logo.png">
 				</a>
 			</div>
-			<a class="navTabs" href="index.html">HOME</a>
-			<a class="navTabs" href="tribute.html">TRIBUTE</a>
-			<a class="navTabs" href="survey.html">SURVEY</a>
-			<a class="navTabs" href="product.html">PRODUCT</a>
+			<a class="navtabs" href="index.html">HOME</a>
+			<a class="navtabs" href="#">TRIBUTE</a>
+			<a class="navtabs" href="survey.html">SURVEY</a>
+			<a class="navtabs" href="product.html">PRODUCT</a>
 			<a class="navTabs" href="https://giannacrisha.github.io/docs/" target="_blank">DOCUMENT</a>
-			<a class="navTabs" href="portfolio.html">PORTFOLIO</a>
+			<a class="navtabs" href="portfolio.html">PORTFOLIO</a>
 		</nav>
 	</div>
 
-<!--
-	<h1>Responsive Web Design Projects</h1>
-	<h2>Preface</h2>
-	<p>Hi there! This is a website that contains all my Responsive Design Projects from freeCodeCamp. I will improve these projects as I go on. Feel free to look at the source code on GitHub! I'm constantly working on my projects and I don't think I'll ever be done with them. <p> 
--->
+	<main id="main">
+		<div id="maindiv">
+			<h1 id="title">
+				<a id="joanclarke" href="https://en.wikipedia.org/wiki/Joan_Clarke" target="_blank"> Joan Clarke</a>
+				<br><font id="subtitle">the woman who broke the Enigma</font></h1>
+			<div id="img-div">
+				<img id="image" src="images/clarke.png" alt="An image of Joan Clarke."><br>
+				<figcaption id="img-caption"> </figcaption>
+			</div><br>
+		</div>
 
+		<div class="back row">
+			<div class="twocolumn" id="biography">
+				<h1>Biography</h1>
+				<article id="tribute-info">
+					Joan Elisabeth Lowther Murray was an English cryptanalyst and numismatist best known for her work as a code-breaker at Bletchley Park during the Second World War. Although she did not personally seek the spotlight, her role in the Enigma project that decrypted Nazi Germany's secret communications earned her awards and citations, such as appointment as a Member of the Order of the British Empire (MBE), in 1946.
+				</article>
+				<p>More information about <a id="tribute-link" href="https://en.wikipedia.org/wiki/Joan_Clarke" target="_blank">Joan Clarke</a>.</p><br>
+			</div>
+			<div class="twocolumn" id="timeline">
+				<h1>Timeline</h1><br>
+				<ul>
+					<li><b>1917</b> &mdash; Born in West Norwood</li>
+					<li><b>1939</b> &mdash; Double first degree in mathematics (Cambridge University)</li>
+					<li><b>1940</b> &mdash; Recruited at the Government Code and Cypher School (GCCS) at Bletchley Park and join the codebreakers.</li>
+					<li><b>1946</b> &mdash; Appointed as a Member of the Order of the British Empire (MBE).</li>
+					<li><b>1952</b> &mdash; Marries Lieutenant-Colonel John K.R. Murray.</li>
+					<li><b>1986</b> &mdash; Awarded the Sanford Saltus Gold Medal by the British Numismatic Society.</li>
+					<li><b>1996</b> &mdash; Dies at her home in Oxford</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		Copyright &copy; 2021 by 
+		<a href="https://github.com/giannacrisha" id="gitlink">Gianna Saludo</a><br>
+		Click <a href="https://codepen.io/giannacrisha/pen/BaWqobg" target="_blank">here</a> to view the CodePen app with the test suite.</p>
+	</footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
